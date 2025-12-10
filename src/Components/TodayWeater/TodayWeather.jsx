@@ -15,7 +15,7 @@ export default function TodayWeather(){
 
     return(
         <div className="block">
-            <div className="bg-[#ffffff58] p-5 mb-5 rounded-2xl border border-[#ffffff9a]">
+            <div className="bg-[#ffffff58] p-5 mb-5 rounded-2xl border border-[#e1e1e18f]">
                 <div className="flex justify-between gap-13 text-[#6b6b6b]">
                     <p>
                         { data ? `${data.location.country}, ${ data.location.name}` : '--:--'}

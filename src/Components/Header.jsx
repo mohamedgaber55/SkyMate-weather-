@@ -21,7 +21,7 @@ export default function Header(){
         bg-[#ffffff5f] 
         backdrop-blur-2xl 
         rounded-xl border
-        border-[#ffffff9a] 
+        border-[#e1e1e18f] 
         p-4
         flex
         justify-between
@@ -31,7 +31,7 @@ export default function Header(){
             text-center 
             bg-[#ffffff58] 
             rounded border 
-            border-[#ffffff9a]
+            border-[#e1e1e18f]
             flex
             px-2
             py-1
@@ -45,7 +45,7 @@ export default function Header(){
                     caret-cyan-50
                     outline-0
                     border-0
-                    w-[150px]
+                    w-[135px]
                     md:w-auto
                     lg:w-auto
                     "
@@ -60,7 +60,7 @@ export default function Header(){
                         bg-[#ffffffc8] 
                         rounded
                         border 
-                        border-[#ffffff9a]
+                        border-[#e1e1e18f]
                         py-1
                         px-2
                         cursor-pointer"
@@ -72,7 +72,7 @@ export default function Header(){
             bg-[#ffffff5f] 
             backdrop-blur-2xl 
             rounded border
-            border-[#ffffff9a] 
+            border-[#e1e1e18f] 
             p-1
             flex
             justify-between
@@ -84,7 +84,7 @@ export default function Header(){
                     text-center 
                     bg-[#ffffff58] 
                     rounded border 
-                    border-[#ffffff9a]
+                    border-[#e1e1e18f]
                     px-3
                     cursor-pointer"
                     style={{opacity: unit === 'c' ? '1' : '.5'}}>°C</button>
@@ -96,7 +96,7 @@ export default function Header(){
                     text-center 
                     bg-[#ffffff58] 
                     rounded border 
-                    border-[#ffffff9a]
+                    border-[#e1e1e18f]
                     px-3
                     cursor-pointer">°F</button>
             </div>
