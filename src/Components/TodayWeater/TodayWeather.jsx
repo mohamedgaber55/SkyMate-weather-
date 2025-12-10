@@ -32,7 +32,7 @@ export default function TodayWeather(){
                         <h5 className="text-3xl font-medium">{data? data.current.condition.text : '--'}</h5>
                     </div>
                 </div>
-                <div className="flex justify-between text-[#848484]">
+                <div className="flex justify-between text-[#6b6b6b] gap-13">
                     <p>Latitude: {data ? data.location.lon : '--'}</p>
                     <p>Longitude: {data ? data.location.lat : '--'}</p>
                 </div>
