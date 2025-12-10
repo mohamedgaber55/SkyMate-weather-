@@ -1,0 +1,105 @@
+import { useContext, useState } from "react"
+import { DataContext } from "../Context/ApiContext";
+import { UnitContext } from "../Context/UnitContext";
+
+export default function Header(){
+
+    const {setCity} = useContext(DataContext)
+    const [searchValue, setSearchValue] = useState('');;
+
+    // unit context
+    const {unit, setUnit} = useContext(UnitContext);
+
+
+    const handleUnit = (unit) => {
+        setUnit(unit)
+    } 
+
+    return(
+        <div className="
+        text-center
+        bg-[#ffffff5f] 
+        backdrop-blur-2xl 
+        rounded-xl border
+        border-[#ffff] 
+        p-4
+        flex
+        justify-between
+        flex-nowrap">
+
+            <div className="
+            text-center 
+            bg-[#ffffff58] 
+            rounded border 
+            border-[#ffff]
+            flex
+            px-2
+            py-1
+            mr-2">
+                <input 
+                    type="search" 
+                    placeholder="Enter City.." 
+                    onChange={(e) => setSearchValue(e.target.value)}
+                    value={searchValue}
+                    className=" 
+                    caret-cyan-50
+                    outline-0
+                    border-0
+                    w-[150px]
+                    md:w-auto
+                    lg:w-auto
+                    "
+                />
+                <button 
+                    style={{opacity: !searchValue ? '.5' : '1'}}
+                    disabled={!searchValue || searchValue.trim() === ""}
+                    onClick={() => {setCity(searchValue); setSearchValue('')}}
+                    className="pl-4 py-1"
+                >
+                    <i className="bi bi-binoculars 
+                        bg-[#ffffffc8] 
+                        rounded
+                        border 
+                        border-[#ffff]
+                        py-1
+                        px-2
+                        cursor-pointer"
+                    ></i>
+                </button>
+            </div>
+
+            <div className="
+            bg-[#ffffff5f] 
+            backdrop-blur-2xl 
+            rounded border
+            border-[#ffff] 
+            p-1
+            flex
+            justify-between
+            w-[95px]">
+    
+                <button 
+                    onClick={() => handleUnit('c')}
+                    className="
+                    text-center 
+                    bg-[#ffffff58] 
+                    rounded border 
+                    border-[#ffff]
+                    px-3
+                    cursor-pointer"
+                    style={{opacity: unit === 'c' ? '1' : '.5'}}>°C</button>
+    
+                <button 
+                    onClick={() => handleUnit('f')}
+                    style={{opacity: unit === 'f' ? '1' : '.5'}}
+                    className="
+                    text-center 
+                    bg-[#ffffff58] 
+                    rounded border 
+                    border-[#ffff]
+                    px-3
+                    cursor-pointer">°F</button>
+            </div>
+        </div>
+    )
+}
