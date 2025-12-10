@@ -37,7 +37,7 @@ export default function App() {
           <div className='container mx-auto'>
             <Header />
           </div>
-            <div className="container mx-auto bg-[#ffffff5f] backdrop-blur-2xl p-4 mt-2 lg:p-10 lg:mt-5 rounded-2xl border border-[#ffff]">
+            <div className="container mx-auto bg-[#ffffff5f] backdrop-blur-2xl p-4 lg:p-10 mt-5 rounded-2xl border border-[#ffffff9a]">
                 <div className="flex flex-wrap lg:justify-between justify-center">
                   <TodayWeather />
                   <NextDaySections />
@@ -45,7 +45,7 @@ export default function App() {
             </div>
         </div>
 
-            <h2 className='bg-[#b9b9b941] backdrop-blur-2xl border-t border-[#ffff] text-center p-2'>Coded By <span className=' font-medium'>Mohamed Gaber</span></h2>
+            <h2 className='bg-[#b9b9b941] backdrop-blur-2xl border-t border-[#ffffff9a] text-center p-2'>Coded By <span className=' font-medium'>Mohamed Gaber</span></h2>
       </div>
     </div>
           

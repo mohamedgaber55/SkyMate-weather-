@@ -13,7 +13,7 @@ export default function Today(){
 
     return(
         <>
-            <div className="bg-[#ffffff58] p-5 mb-5 rounded-2xl border border-[#ffff]">
+            <div className="bg-[#ffffff58] p-5 mb-5 rounded-2xl border border-[#ffffff9a]">
                 <div className="flex justify-between flex-wrap">
                     <TodaySection title={`Average Temp:`} value={data? data.forecast.forecastday[0].day[`avgtemp_${unit}`] + '°' + unit.toUpperCase() : '--'}/>
                     <TodaySection title={'Min Temp:'} value={data? data.forecast.forecastday[0].day[`mintemp_${unit}`] + '°' + unit.toUpperCase() : '--'}/>
@@ -25,7 +25,7 @@ export default function Today(){
                     <TodaySection title={'Chance of Rain:'} value={data? data.forecast.forecastday[0].day.daily_chance_of_rain + '%' : '--'}/>
                 </div>
             </div>
-            <div className="bg-[#ffffff58] p-5 mb-5 rounded-2xl border border-[#ffff]">
+            <div className="bg-[#ffffff58] p-5 mb-5 rounded-2xl border border-[#ffffff9a]">
                 <div className="flex justify-between flex-wrap">
                     <TodaySection title={'Pressure:'} value={data? data.current.pressure_mb + 'mb' : '--'}/>
                     <TodaySection title={'Humidity:'} value={data? data.current.humidity + '%' : '--'}/>
@@ -37,7 +37,7 @@ export default function Today(){
                     <TodaySection title={'Wind Speed:'} value={data? data.current.wind_kph + 'km/h' : '--'}/>
                 </div>
             </div>
-            <div className="bg-[#ffffff58] p-5 rounded-2xl border border-[#ffff]">
+            <div className="bg-[#ffffff58] p-5 rounded-2xl border border-[#ffffff9a]">
                 <div className="flex justify-between flex-wrap">
                     <TodaySection title={'Wind Gust:'} value={data? data.current.gust_kph + 'kph' : '--'}/>
                     <TodaySection title={'Wind Chill:'} value={data? data.current.wind_degree + '°' : '--'}/>

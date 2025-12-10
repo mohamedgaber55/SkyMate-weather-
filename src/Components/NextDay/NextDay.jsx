@@ -7,10 +7,10 @@ export default function NextDay(props){
     const {unit} = useContext(UnitContext);
 
     return(
-        <div className="bg-[#ffffff58] p-5 rounded-2xl border border-[#ffff]">
+        <div className="bg-[#ffffff58] p-5 rounded-2xl border border-[#ffffff9a]">
             <div className="flex justify-between">
                 <p className="text-[#6b6b6b]">{props.date}</p>
-                <p className="text-[#848484]">{props.day}</p>
+                <p className="text-[#6b6b6b]">{props.day}</p>
             </div>
 
             <div>
@@ -25,30 +25,30 @@ export default function NextDay(props){
 
             <div>
                 <div className="flex justify-between flex-wrap">
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffff]">
+                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffffff9a]">
                         <p>Minimum Temperature :</p>
                         <p>{props.minTemp}</p>
                     </div>
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffff]">
+                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffffff9a]">
                         <p>Maximum Temperature :</p>
                         <p>{props.maxTemp}</p>
                     </div>
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffff]">
+                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffffff9a]">
                         <p>Chance of Rain :</p>
                         <p>{props.rain}%</p>
                     </div>
                 </div>
 
                 <div className="flex justify-between flex-wrap">
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffff]">
+                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffffff9a]">
                         <p>Average Humidity :</p>
                         <p>{props.humidity}%</p>
                     </div>
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffff]">
+                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffffff9a]">
                         <p>Average Visibility :</p>
                         <p>{props.visibility}</p>
                     </div>
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffff]">
+                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#ffffff9a]">
                         <p>Max Wind Speed :</p>
                         <p>{props.wind}</p>
                     </div>
