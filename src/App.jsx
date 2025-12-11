@@ -38,9 +38,13 @@ export default function App() {
             <Header />
           </div>
             <div className="container mx-auto bg-[#ffffff5f] backdrop-blur-2xl p-4 lg:p-10 my-5 rounded-2xl border border-[#e1e1e18f]">
-                <div className="flex flex-wrap lg:justify-between justify-center">
-                  <TodayWeather />
-                  <NextDaySections />
+                <div className="grid grid-cols-12 gap-5 lg:justify-between justify-center">
+                  <div className='col-span-12 md:col-span-12 lg:col-span-5'>
+                    <TodayWeather />  
+                  </div>
+                  <div className='col-span-12 md:col-span-12 lg:col-span-7'>
+                    <NextDaySections />
+                  </div>
                 </div>
             </div>
         </div>
