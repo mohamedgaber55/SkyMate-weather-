@@ -37,7 +37,7 @@ export default function App() {
           <div className='container mx-auto'>
             <Header />
           </div>
-            <div className="container mx-auto bg-[#ffffff5f] backdrop-blur-2xl p-4 lg:p-5 my-5 rounded-2xl border border-[#e1e1e18f]">
+            <div className="container mx-auto bg-[#ffffff58] backdrop-blur-2xl p-4 lg:p-5 my-5 rounded-2xl border border-[#e1e1e18f]">
                 <div className="grid grid-cols-12 gap-5 lg:justify-between justify-center">
                   <div className='col-span-12 md:col-span-12 lg:col-span-5'>
                     <TodayWeather />  
