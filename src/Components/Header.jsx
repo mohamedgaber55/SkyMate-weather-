@@ -43,7 +43,7 @@ export default function Header(){
                     onKeyDown={(e) => (e.key === 'Enter' && searchValue.trim()) && (setCity(searchValue), setSearchValue(''))}
                     value={searchValue}
                     className=" 
-                    caret-cyan-50
+                    caret-[#00000] 
                     outline-0
                     border-0
                     w-[135px]
