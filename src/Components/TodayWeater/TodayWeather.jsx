@@ -15,12 +15,12 @@ export default function TodayWeather(){
 
     return(
         <div className="block">
-            <div className="bg-[#ffffff58] p-5 mb-5 rounded-2xl border border-[#e1e1e18f]">
-                <div className="flex justify-between gap-13 text-[#6b6b6b]">
+            <div className="bg-[#ffffff58] p-4 mb-5 rounded-2xl border border-[#e1e1e18f]">
+                <div className="flex justify-between gap-13 text-[#414141]">
                     <p>
                         { data ? `${data.location.country}, ${ data.location.name}` : '--:--'}
                     </p>
-                    <p>{data? data.forecast.forecastday[0].date : '--/--/----'}</p>
+                    <p>{data? data.forecast.forecastday[0].date + ' ' +'(Today)' : '--/--/----'}</p>
                 </div>
 
                 <div>
@@ -32,7 +32,7 @@ export default function TodayWeather(){
                         <h5 className="text-3xl font-medium">{data? data.current.condition.text : '--'}</h5>
                     </div>
                 </div>
-                <div className="flex justify-between text-[#6b6b6b] gap-13">
+                <div className="flex justify-between gap-13 text-[#414141]">
                     <p>Latitude: {data ? data.location.lon : '--'}</p>
                     <p>Longitude: {data ? data.location.lat : '--'}</p>
                 </div>

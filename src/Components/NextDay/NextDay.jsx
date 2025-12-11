@@ -7,10 +7,10 @@ export default function NextDay(props){
     const {unit} = useContext(UnitContext);
 
     return(
-        <div className="bg-[#ffffff58] p-5 rounded-2xl border border-[#e1e1e18f]">
+        <div className="bg-[#ffffff58] p-4 rounded-2xl border border-[#e1e1e18f]">
             <div className="flex justify-between">
-                <p className="text-[#6b6b6b]">{props.date}</p>
-                <p className="text-[#6b6b6b]">{props.day}</p>
+                <p className="text-[#414141]">{props.date}</p>
+                <p className="text-[#414141]">{props.day}</p>
             </div>
 
             <div>
@@ -23,36 +23,32 @@ export default function NextDay(props){
                 </div>
             </div>
 
-            <div>
-                <div className="flex justify-between flex-wrap">
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
-                        <p>Minimum Temperature :</p>
+            <div className="grid grid-cols-12">
+                    <div className="col-span-12 md:col-span-12 lg:col-span-4 text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
+                        <p>Minimum Temperature</p>
                         <p>{props.minTemp}</p>
                     </div>
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
-                        <p>Maximum Temperature :</p>
+                    <div className="col-span-12 md:col-span-12 lg:col-span-4 text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
+                        <p>Maximum Temperature</p>
                         <p>{props.maxTemp}</p>
                     </div>
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
-                        <p>Chance of Rain :</p>
+                    <div className="col-span-12 md:col-span-12 lg:col-span-4 text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
+                        <p>Chance of Rain</p>
                         <p>{props.rain}%</p>
                     </div>
-                </div>
 
-                <div className="flex justify-between flex-wrap">
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
-                        <p>Average Humidity :</p>
+                    <div className="col-span-12 md:col-span-12 lg:col-span-4 text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
+                        <p>Average Humidity</p>
                         <p>{props.humidity}%</p>
                     </div>
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
-                        <p>Average Visibility :</p>
+                    <div className="col-span-12 md:col-span-12 lg:col-span-4 text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
+                        <p>Average Visibility</p>
                         <p>{props.visibility}</p>
                     </div>
-                    <div className="text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
-                        <p>Max Wind Speed :</p>
+                    <div className="col-span-12 md:col-span-12 lg:col-span-4 text-center w-full lg:w-auto bg-[#ffffff58] px-4 py-2 m-1.5 rounded-xl border border-[#e1e1e18f]">
+                        <p>Max Wind Speed</p>
                         <p>{props.wind}</p>
                     </div>
-                </div>
             </div>
         </div>
     )

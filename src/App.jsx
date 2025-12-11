@@ -37,7 +37,7 @@ export default function App() {
           <div className='container mx-auto'>
             <Header />
           </div>
-            <div className="container mx-auto bg-[#ffffff5f] backdrop-blur-2xl p-4 lg:p-10 my-5 rounded-2xl border border-[#e1e1e18f]">
+            <div className="container mx-auto bg-[#ffffff5f] backdrop-blur-2xl p-4 lg:p-5 my-5 rounded-2xl border border-[#e1e1e18f]">
                 <div className="grid grid-cols-12 gap-5 lg:justify-between justify-center">
                   <div className='col-span-12 md:col-span-12 lg:col-span-5'>
                     <TodayWeather />  
@@ -49,7 +49,7 @@ export default function App() {
             </div>
         </div>
 
-            <h2 className='bg-[#b9b9b941] backdrop-blur-2xl border-t border-[#e1e1e18f] text-center p-2'>Coded By <span className=' font-medium'>Mohamed Gaber</span></h2>
+            <h2 className='bg-[#d6d6d69c] backdrop-blur-2xl border-t border-[#e1e1e18f] text-center p-2'>Coded By <span className=' font-medium'>Mohamed Gaber</span></h2>
       </div>
     </div>
           
