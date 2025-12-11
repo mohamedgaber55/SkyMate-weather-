@@ -40,6 +40,7 @@ export default function Header(){
                     type="search" 
                     placeholder="Enter City.." 
                     onChange={(e) => setSearchValue(e.target.value)}
+                    onKeyDown={(e) => (e.key === 'Enter' && searchValue.trim()) && (setCity(searchValue), setSearchValue(''))}
                     value={searchValue}
                     className=" 
                     caret-cyan-50
@@ -57,10 +58,11 @@ export default function Header(){
                     className="pl-4 py-1"
                 >
                     <i className="bi bi-binoculars 
-                        bg-[#ffffffc8] 
+                        bg-[#252525] 
+                        text-[#ffff]
                         rounded
                         border 
-                        border-[#e1e1e18f]
+                        border-[#c1c1c1c0]
                         py-1
                         px-2
                         cursor-pointer"
@@ -82,9 +84,10 @@ export default function Header(){
                     onClick={() => handleUnit('c')}
                     className="
                     text-center 
-                    bg-[#ffffff58] 
+                    bg-[#252525] 
+                    text-[#ffff]
+                    border-[#c1c1c1c0]
                     rounded border 
-                    border-[#e1e1e18f]
                     px-3
                     cursor-pointer"
                     style={{opacity: unit === 'c' ? '1' : '.5'}}>°C</button>
@@ -94,9 +97,10 @@ export default function Header(){
                     style={{opacity: unit === 'f' ? '1' : '.5'}}
                     className="
                     text-center 
-                    bg-[#ffffff58] 
+                    bg-[#252525] 
+                    text-[#ffff]
+                    border-[#c1c1c1c0]
                     rounded border 
-                    border-[#e1e1e18f]
                     px-3
                     cursor-pointer">°F</button>
             </div>
