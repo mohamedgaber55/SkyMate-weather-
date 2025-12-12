@@ -1,16 +1,35 @@
-# React + Vite
+🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+مرحبًا بك في Weather App 
+مشروع بسيط لعرض حالة الطقس لأي مدينة حول العالم، مبني بـ React + Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ المميزات
+- البحث عن أي مدينة وعرض حالة الطقس الحالية.
+- عرض درجة الحرارة مع إمكانية اختيار وحدة القياس:
+  - Celsius (°C)
+  - Fahrenheit (°F)
+- عرض معلومات إضافية مثل:
+  - متوسط الحرارة
+  - الحد الأدنى والحد الأقصى
+  - وصف حالة الطقس (صافي، غائم، ممطر، إلخ)
+- الخلفية تتغير تلقائيًا حسب حالة الطقس.
+- تجربة مستخدم سلسة ومريحة على الموبايل.
+- استخدام React Context (useContext) لإدارة الاستيت بشكل مرن.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠️ التقنيات المستخدمة
+- React (Functional Components)
+- Vite (Build tool سريع وخفيف)
+- Tailwind CSS (تصميم سريع وبسيط)
+- useContext لإدارة الاستيت واختيار وحدة القياس.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎨 لمحة عن الواجهة
+- واجهة بسيطة وسهلة الاستخدام.
+- الخلفيات تتغير حسب حالة الطقس.
+- إمكانية اختيار وحدة القياس بين °C و °F بسهولة.
+- تجربة Dark Mode مريحة للعين.
